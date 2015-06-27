@@ -1,0 +1,10 @@
+{
+  "name": "hga-love",
+  "dependencies": {
+    "jquery": "~1.11.2",
+    "bootstrap": "~3.3.4",
+    "timecircles": "~1.5.3",
+    "fullpage.js": "~2.6.4",
+    "loaders.css": "~0.1.1"
+  }
+}
