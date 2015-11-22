@@ -1,9 +1,0 @@
-{
-    "publicDir": "./",
-    "assetsDir": "./",
-    "cssOutput": "css",
-    "jsOutput": "js",
-    "bowerDir": "bower_components",
-    "production": true,
-    "sourcemaps": false
-}

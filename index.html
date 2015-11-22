@@ -1,52 +1,55 @@
 <!doctype html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Văn Ánh &hearts; Hà Giang</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Văn Ánh &hearts; Hà Giang</title>
 
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=latin,vietnamese">
-    <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:100,300,400&amp;subset=latin,vietnamese">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/jquery.fullPage.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-    <div id="loading">
-        <div class="loader-inner ball-scale-multiple">
-            <div></div>
-            <div></div>
-            <div></div>
+  <div id="loading" class="loading">
+    <div class="loader-inner ball-scale-multiple">
+      <div></div><div></div><div></div>
+    </div>
+  </div>
+
+  <div id="main" class="hidden">
+    <section class="section" data-anchor="about">
+      <div class="container">
+        <div class="avatar">
+          <img class="shadow" src="./img/avatar.jpg" alt="Văn Ánh &hearts; Thu Hà">
         </div>
-    </div>
 
-    <div id="main" class="hidden">
-        <section class="section" data-anchor="about">
-            <div class="container">
-                <div class="avatar">
-                    <img class="shadow" src="./img/avatar.jpg" alt="Văn Ánh &hearts; Thu Hà">
-                </div>
+        <h1>
+          <span>Văn Ánh</span>
+          <span class="hearts">&hearts;</span>
+          <span>Thu Hà</span>
+        </h1>
 
-                <h1>
-                    <span>Văn Ánh</span>
-                    <span class="hearts">&hearts;</span>
-                    <span>Thu Hà</span>
-                </h1>
+        <a href="#love-days" class="mouse-icon">
+          <span class="wheel"></span>
+        </a>
+      </div>
+    </section>
 
-                <a href="#love-days" class="mouse-icon">
-                    <span class="wheel"></span>
-                </a>
-            </div>
-        </section>
+    <section class="section" data-anchor="love-days">
+      <div class="container">
+        <h2>Love days</h2>
+        <div class="countdown-time" data-date="2015-04-22 00:57:00"></div>
+        <p>Days of love &hearts;</p>
+      </div>
+    </section>
+  </div>
 
-        <section class="section" data-anchor="love-days">
-            <div class="container">
-                <h1>Love days</h1>
-                <div class="countdown-time" data-date="2015-04-22 00:57:00"></div>
-                <p>Days of love &hearts;</p>
-            </div>
-        </section>
-    </div>
+  <!-- JS -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="./js/vendor.js"></script>
+  <script src="./js/main.js"></script>
 
-    <script src="./js/vendor.js"></script>
-    <script src="./js/main.js"></script>
 </body>
 </html>

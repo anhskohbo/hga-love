@@ -1,0 +1,144 @@
+/* Reset */
+body {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "Roboto", Arial, sans-serif;
+
+  color: white;
+  background-color: #ed5565;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 100;
+
+  text-transform: uppercase;
+}
+
+/* Loading */
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Mouse icon */
+.mouse-icon {
+  position: absolute;
+  left: 50%;
+  bottom: 40px;
+  border: 1px solid white;
+  border-radius: 16px;
+  height: 40px;
+  width: 24px;
+  margin-left: -15px;
+  display: block;
+  z-index: 10;
+
+  .wheel {
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    background: white;
+    width: 2px;
+    height: 6px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-name: mouse-wheel-drop;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes mouse-wheel-drop {
+  0% {
+    top: 5px;
+    opacity: 0;
+  }
+
+  30% {
+    top: 10px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
+
+/* Avatar */
+.avatar img {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: solid 3px white;
+
+  &.shadow {
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-name: avatar-boxshadow-animation;
+  }
+}
+
+@keyframes avatar-boxshadow-animation {
+  5% {
+    box-shadow: 0 0 0 7px rgba(white, 0.5);
+  }
+
+  15% {
+    box-shadow: 0 0 0 7px rgba(white, 0.5), 0 0 0 15px rgba(white, 0.25);
+  }
+
+  25% {
+    box-shadow: 0 0 0 7px rgba(white, 0.5), 0 0 0 15px rgba(white, 0.25), 0 0 0 35px rgba(white, 0.15);
+  }
+
+  50% {
+    box-shadow: 0 0 0 7px rgba(white, 0.5), 0 0 0 15px rgba(white, 0.35), 0 0 0 35px rgba(white, 0.25), 0 0 0 75px rgba(white, 0.15);
+  }
+}
+
+/* Section */
+.section {
+  text-align: center;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Time-circles */
+.time_circles {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  > div {
+    position: absolute;
+    text-align: center;
+  }
+
+  > div > h4 {
+    margin: 0px;
+    padding: 0px;
+    font-weight: 100;
+  }
+
+  > div > span {
+    width: 100%;
+    display: block;
+    margin-top: 0.4em;
+  }
+}
