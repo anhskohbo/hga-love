@@ -16,15 +16,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Loading */
+.hidden {
+  display: none;
+}
+
 .loading {
   position: absolute;
   left: 50%;
   top: 50%;
 }
 
-.hidden {
-  display: none;
-}
+// Include loader path.
+@import 'loader';
 
 /* Mouse icon */
 .mouse-icon {
